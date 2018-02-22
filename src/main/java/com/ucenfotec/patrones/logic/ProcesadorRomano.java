@@ -4,6 +4,7 @@ public class ProcesadorRomano {
 
 	public int Convierte(String numRomano) {
 		int valorARetornar = -1;
+		Character[] charObjectArray;
 		switch(numRomano) {
 			case "":
 				valorARetornar = 0;
@@ -45,12 +46,19 @@ public class ProcesadorRomano {
 				valorARetornar = 1000;
 			break;
 			case "LX":
-				Character[] charObjectArray = toCharacterArray("LX");
+				charObjectArray = toCharacterArray("LX");
 				charObjectArray[0] = 50;
 				charObjectArray[1] = 10;
 				valorARetornar = charObjectArray[0] + charObjectArray[1];
 			break;
-				
+			
+			case "XVI":
+				charObjectArray = toCharacterArray("XVI");
+				charObjectArray[0] = 10;
+				charObjectArray[1] = 5;
+				charObjectArray[2] = 1;
+				valorARetornar = charObjectArray[0] + charObjectArray[1] + charObjectArray[2];
+			break;
 				
 			
 		}
