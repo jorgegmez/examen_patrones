@@ -48,5 +48,11 @@ public class ProcesadorRomanoTest {
 		assertEquals(50, numRomano.Convierte("L"));
 	}
 	
+	@Test
+	public void StringC() {
+		ProcesadorRomano numRomano = new ProcesadorRomano();
+		assertEquals(100, numRomano.Convierte("C"));
+	}
+	
 
 }
