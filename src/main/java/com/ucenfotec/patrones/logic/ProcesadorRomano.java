@@ -85,6 +85,10 @@ public class ProcesadorRomano {
 				valorARetornar = charObjectArray[0] + charObjectArray[1] + charObjectArray[2] 
 						         + charObjectArray[3];
 			break;
+			
+			default:
+				System.out.println("Error");
+			break;
 				
 			
 		}
