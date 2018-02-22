@@ -12,6 +12,12 @@ public class ProcesadorRomanoTest {
 		assertEquals(0, numRomano.Convierte(""));
 	}
 	
+	@Test
+	public void StringI() {
+		ProcesadorRomano numRomano = new ProcesadorRomano();
+		assertEquals(1, numRomano.Convierte("I"));
+	}
+	
 	
 
 }
