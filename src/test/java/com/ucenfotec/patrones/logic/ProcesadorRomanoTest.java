@@ -82,7 +82,7 @@ public class ProcesadorRomanoTest {
 	@Test
 	public void StrinVIII() {
 		ProcesadorRomano numRomano = new ProcesadorRomano();
-		assertEquals(16, numRomano.Convierte("VIII"));
+		assertEquals(8, numRomano.Convierte("VIII"));
 	}
 
 }

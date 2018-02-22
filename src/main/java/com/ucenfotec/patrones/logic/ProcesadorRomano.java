@@ -59,6 +59,15 @@ public class ProcesadorRomano {
 				charObjectArray[2] = 1;
 				valorARetornar = charObjectArray[0] + charObjectArray[1] + charObjectArray[2];
 			break;
+			
+			case "VIII":
+				charObjectArray = toCharacterArray("VIII");
+				charObjectArray[0] = 5;
+				charObjectArray[1] = 1;
+				charObjectArray[2] = 1;
+				charObjectArray[3] = 1;
+				valorARetornar = charObjectArray[0] + 3;
+			break;
 				
 			
 		}
