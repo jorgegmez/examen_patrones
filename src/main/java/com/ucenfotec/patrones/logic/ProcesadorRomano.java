@@ -8,6 +8,10 @@ public class ProcesadorRomano {
 			case "":
 				valorARetornar = 0;
 			break;
+			
+			case "I":
+				valorARetornar = 1;
+			break;
 		}
 		return valorARetornar;
 	}
