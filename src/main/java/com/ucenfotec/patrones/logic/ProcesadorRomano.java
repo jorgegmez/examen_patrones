@@ -69,6 +69,14 @@ public class ProcesadorRomano {
 				valorARetornar = charObjectArray[0] + 3;
 			break;
 			
+			case "XXI":
+				charObjectArray = toCharacterArray("XXI");
+				charObjectArray[2] = 1;
+				if(charObjectArray[0].equals(charObjectArray[1])) {
+					valorARetornar = charObjectArray[2] + 20;
+				}
+			break;
+			
 			case "CI":
 				charObjectArray = toCharacterArray("CI");
 				charObjectArray[0] = 100;
