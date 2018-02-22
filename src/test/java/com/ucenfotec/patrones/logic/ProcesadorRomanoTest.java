@@ -90,5 +90,11 @@ public class ProcesadorRomanoTest {
 		ProcesadorRomano numRomano = new ProcesadorRomano();
 		assertEquals(101, numRomano.Convierte("CI"));
 	}
+	
+	@Test
+	public void StrinCLXI() {
+		ProcesadorRomano numRomano = new ProcesadorRomano();
+		assertEquals(161, numRomano.Convierte("CLXI"));
+	}
 
 }
