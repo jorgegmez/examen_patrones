@@ -16,6 +16,10 @@ public class ProcesadorRomano {
 			case "II":
 				valorARetornar = 2;
 			break;
+			
+			case "III":
+				valorARetornar = 3;
+			break;
 		}
 		return valorARetornar;
 	}
