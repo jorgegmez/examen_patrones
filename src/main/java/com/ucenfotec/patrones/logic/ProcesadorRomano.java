@@ -45,7 +45,7 @@ public class ProcesadorRomano {
 				valorARetornar = 1000;
 			break;
 			case "LX":
-				Character[] charObjectArray = "LX".chars().mapToObj(c -> (char)c).toArray(Character[]::new); ;
+				Character[] charObjectArray = toCharacterArray("LX");
 				charObjectArray[0] = 50;
 				charObjectArray[1] = 10;
 				valorARetornar = charObjectArray[0] + charObjectArray[1];
@@ -57,7 +57,20 @@ public class ProcesadorRomano {
 		return valorARetornar;
 	}
 	
-	
+	public Character[] toCharacterArray( String numRomano ) {
+
+	   if ( numRomano == null ) {
+	     return null;
+	   }
+
+	   int len = numRomano.length();
+	   Character[] array = new Character[len];
+	   for (int i = 0; i < len ; i++) {
+	      array[i] = new Character(numRomano.charAt(i));
+	   }
+
+	   return array;
+	}
 
 
 }
