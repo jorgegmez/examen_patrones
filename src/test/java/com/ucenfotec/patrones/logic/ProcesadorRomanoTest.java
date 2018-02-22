@@ -33,7 +33,7 @@ public class ProcesadorRomanoTest {
 	@Test
 	public void StringV() {
 		ProcesadorRomano numRomano = new ProcesadorRomano();
-		assertEquals(5, numRomano.Convierte("v"));
+		assertEquals(5, numRomano.Convierte("V"));
 	}
 	
 
