@@ -44,9 +44,20 @@ public class ProcesadorRomano {
 			case "M":
 				valorARetornar = 1000;
 			break;
+			case "LX":
+				Character[] charObjectArray = "LX".chars().mapToObj(c -> (char)c).toArray(Character[]::new); ;
+				charObjectArray[0] = 50;
+				charObjectArray[1] = 10;
+				valorARetornar = charObjectArray[0] + charObjectArray[1];
+			break;
+				
+				
+			
 		}
 		return valorARetornar;
 	}
 	
+	
+
 
 }
