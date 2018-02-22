@@ -63,10 +63,11 @@ public class ProcesadorRomano {
 			case "VIII":
 				charObjectArray = toCharacterArray("VIII");
 				charObjectArray[0] = 5;
-				charObjectArray[1] = 1;
-				charObjectArray[2] = 1;
-				charObjectArray[3] = 1;
-				valorARetornar = charObjectArray[0] + 3;
+				if(charObjectArray[1].equals(charObjectArray[2]) && 
+					charObjectArray[1].equals(charObjectArray[3]) &&
+					charObjectArray[2].equals(charObjectArray[3])) {
+					valorARetornar = charObjectArray[0] + 3;
+				}
 			break;
 			
 			case "XXI":
